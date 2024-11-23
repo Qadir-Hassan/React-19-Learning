@@ -7,6 +7,7 @@
 :root{
 --primary-color: #F54F50;
 --para-font-size: 18px;
+--font-color:rgba(0, 0, 0, 0.9);
 }
 
 .site-header{
@@ -15,4 +16,55 @@
   padding: 20px 0px ;
   background-color: var(--primary-color);
   color: #fff;
+}
+
+.trip-panel{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 700px;
+  margin: auto;
+  column-gap: 20px;
+  padding: 40px 0px;
+}
+
+.trip-panel img{
+  width: 200px;
+ 
+  border-radius: 10px;
+  max-width: 200px;
+}
+
+.map-icon{
+  width: 20px !important;
+  height: fit-content;
+}
+
+.location-box{
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 5px;
+}
+
+.location-box a{
+  color: rgba(0, 0, 0, 0.553);
+}
+
+.content-box .trip-detail-box h3{
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--font-color);
+  padding: 8px 0px;
+}
+.content-box .trip-detail-box > p{
+  font-size: 16px;
+  color: black;
+  font-weight:600;
+  padding-bottom: 8px;
+}
+.trip-description p{
+  color: var(--font-color);
+  font-size: 18px;
+  text-align: justify;
+  line-height: 1.3em;
 }
